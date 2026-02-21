@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cream: #F5F0E8;
+  --espresso: #2C1810;
+  --caramel: #C8956C;
+  --latte: #D4A574;
+  --foam: #FAF7F2;
+  --dark-roast: #1A0F0A;
+  --mid-roast: #4A2C20;
+  --steam: rgba(200, 149, 108, 0.15);
+  --shadow: rgba(44, 24, 16, 0.12);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--cream);
+  color: var(--espresso);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--latte); border-radius: 3px; }
+
+/* Leaflet fix */
+.leaflet-container {
+  border-radius: 16px;
+  font-family: 'DM Sans', sans-serif;
+}
